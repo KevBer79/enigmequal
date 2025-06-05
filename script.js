@@ -1,7 +1,7 @@
 // Questions du questionnaire
 const questions = [
   {
-    question: "Le poisson a attendu 3 heures sur la ligne de production",
+    question: "Le poisson a attendu 3 heures sur la ligne de production (3 bonnes réponses)",
     options: [
       "Les bactéries se sont développées ",
       "Ce n’est pas grave, le surgélateur va le surgeler ensuite",
@@ -16,21 +16,19 @@ const questions = [
     multiple: true
   },
   {
-    question: "La sauce a attendu 3 heures dans le bas tampon à une température estimée à 60°C",
+    question: "La sauce dans les barquettes a attendu 3 heures dans le bac tampon à une température estimée à 62°C (1 bonne réponse)",
     options: [
-      "Les bactéries se sont développées ",
-      "La température reste correcte mais il faut refaire un CCP de cuisson",
-      "La sauce a décanté mais je dose quand même ",
-      "La sauce doit être mise en PSO"
+      "Les bactéries se sont développées",
+      "La température reste correcte, je dose la sauce",
+      "La sauce a décanté mais je dose quand même",
+      "Je jette la sauce"
     ],
     correct: [
-      "La température reste correcte mais il faut refaire un CCP de cuisson",
-      "La sauce doit être mise en PSO"
+      "La température reste correcte, je dose la sauce",
     ],
-    multiple: true
   },
   {
-    question: "Le mécanicien est venu de dehors sans se laver les mains",
+    question: "•	Le mécanicien est venu de dehors sans se laver les mains (1 bonne réponse)",
     options: [
       "Il a eu raison car la panne était urgente",
       "Il a eu raison car il ne touche pas la matière",
@@ -40,14 +38,14 @@ const questions = [
     correct: ["Il a eu tort, même s’il ne touche pas la matière"]
   },
   {
-    question: "Le mécanicien a posé la plaque de la pompe est posée au sol",
+    question: "•	Le mécanicien a posé le carter de la pompe au sol (1 bonne réponse)",
     options: [
       "Il a eu raison car il va rincer la plaque à l’eau",
       "Il a eu raison pour ne pas perdre de temps",
-      "Il aurai dû se faire aider, pour aller chercher un bac propre et poser la plaque à l’intérieur",
-      "Il l’a posé au sol, car il pensait que la ligne sera dans tous les cas nettoyée"
+      "Il aurait dû la poser dans un bac propre",
+      "o	Il l’a posé au sol, car il pensait que la ligne sera dans tous les cas nettoyés, il la remonte"
     ],
-    correct: ["Il aurai dû se faire aider, pour aller chercher un bac propre et poser la plaque à l’intérieur"]
+    correct: ["Il aurait dû la poser dans un bac propre"]
   }
 ];
 
@@ -95,7 +93,7 @@ document.getElementById("next-button").addEventListener("click", () => {
   if (currentQuestionIndex < questions.length) {
     afficherQuestion();
   } else {
-    document.getElementById("questionnaire").innerHTML = "<h3>Bravo ! Vous avez terminé !</h3>";
+    document.getElementById("questionnaire").innerHTML = "<h3>Bravo ! Le mot code est: Développement microbiologique</h3>";
   }
 });
 
