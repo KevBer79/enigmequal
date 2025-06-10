@@ -17,6 +17,7 @@ const questions = [
   },
   {
     question: "La sauce dans les barquettes a attendu 3 heures dans le bac tampon à une température estimée à 62°C (1 bonne réponse)",
+    imageSrc: "images/Temp.png",
     options: [
       "Les bactéries se sont développées",
       "La température reste correcte, je dose la sauce",
