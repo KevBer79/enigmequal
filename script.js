@@ -29,7 +29,7 @@ const questions = [
     ],
   },
   {
-    question: "•	Le mécanicien est venu de dehors sans se laver les mains (1 bonne réponse)",
+    question: "• Le mécanicien est venu de dehors sans se laver les mains (1 bonne réponse)",
     options: [
       "Il a eu raison car la panne était urgente",
       "Il a eu raison car il ne touche pas la matière",
@@ -39,12 +39,12 @@ const questions = [
     correct: ["Il a eu tort, même s’il ne touche pas la matière"]
   },
   {
-    question: "•	Le mécanicien a posé le carter de la pompe au sol (1 bonne réponse)",
+    question: "• Le mécanicien a posé le carter de la pompe au sol (1 bonne réponse)",
     options: [
       "Il a eu raison car il va rincer la plaque à l’eau",
       "Il a eu raison pour ne pas perdre de temps",
       "Il aurait dû la poser dans un bac propre",
-      "o	Il l’a posé au sol, car il pensait que la ligne sera dans tous les cas nettoyés, il la remonte"
+      "o Il l’a posé au sol, car il pensait que la ligne sera dans tous les cas nettoyés, il la remonte"
     ],
     correct: ["Il aurait dû la poser dans un bac propre"]
   }
@@ -58,10 +58,25 @@ function afficherQuestion() {
 
   const questionText = document.getElementById("question-text");
   const optionsContainer = document.getElementById("options-container");
+  const imageContainer = document.getElementById("image-container");
   const nextButton = document.getElementById("next-button");
 
   questionText.textContent = question.question;
   optionsContainer.innerHTML = "";
+
+  // Affichage de l'image si existe
+  if (imageContainer) {
+    imageContainer.innerHTML = "";
+    if (question.imageSrc) {
+      const img = document.createElement("img");
+      img.src = question.imageSrc;
+      img.alt = "Illustration de la question";
+      img.style.maxWidth = "250px";
+      img.style.display = "block";
+      img.style.margin = "16px auto";
+      imageContainer.appendChild(img);
+    }
+  }
 
   question.options.forEach(option => {
     const label = document.createElement("label");
@@ -81,8 +96,8 @@ function afficherQuestion() {
 document.getElementById("next-button").addEventListener("click", () => {
   const inputs = document.querySelectorAll("#options-container input");
   const selected = Array.from(inputs).filter(i => i.checked).map(i => i.value);
-  const correct = questions[currentQuestionIndex].correct.sort().toString();
-  const selectedStr = selected.sort().toString();
+  const correct = questions[currentQuestionIndex].correct.slice().sort().toString();
+  const selectedStr = selected.slice().sort().toString();
 
   if (correct !== selectedStr) {
     afficherMessageErreur("Réponse incorrecte. Essayez encore !");
