@@ -1,7 +1,7 @@
 // Questions du questionnaire
 const questions = [
   {
-    question: "Le poisson a attendu 3 heures sur la ligne de production (3 bonnes réponses)",
+    question: "Le poisson a attendu 3 heures sur la ligne de production ",
     options: [
       "Les bactéries se sont développées ",
       "Ce n’est pas grave, le surgélateur va le surgeler ensuite",
@@ -16,7 +16,7 @@ const questions = [
     multiple: true
   },
   {
-    question: "La sauce dans les barquettes a attendu 3 heures dans le bac tampon à une température estimée à 62°C (1 bonne réponse)",
+    question: "La sauce dans les barquettes a attendu 3 heures dans le bac tampon à une température estimée à 62°C ",
     imageSrc: "images/Temp.png",
     options: [
       "Les bactéries se sont développées",
@@ -29,7 +29,7 @@ const questions = [
     ],
   },
   {
-    question: "• Le mécanicien est venu de dehors sans se laver les mains (1 bonne réponse)",
+    question: "• Le mécanicien est venu de dehors sans se laver les mains ",
     options: [
       "Il a eu raison car la panne était urgente",
       "Il a eu raison car il ne touche pas la matière",
@@ -39,7 +39,7 @@ const questions = [
     correct: ["Il a eu tort, même s’il ne touche pas la matière"]
   },
   {
-    question: "• Le mécanicien a posé le carter de la pompe au sol (1 bonne réponse)",
+    question: "• Le mécanicien a posé le carter de la pompe au sol ",
     options: [
       "Il a eu raison car il va rincer la plaque à l’eau",
       "Il a eu raison pour ne pas perdre de temps",
