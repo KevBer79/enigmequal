@@ -6,7 +6,7 @@ const questions = [
       "Les bactéries se sont développées ",
       "Ce n’est pas grave, le surgélateur va le surgeler ensuite",
       "Un retour en stock aurait dû être fait dès le début de la panne",
-      "Il faut détruire toutes les matières qui ont dégelées lors de la panne"
+      "Il faut détruire toutes les matières qui ont dégelés lors de la panne"
     ],
     correct: [
       "Les bactéries se sont développées ",
