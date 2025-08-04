@@ -11,7 +11,7 @@ const questions = [
     correct: [
       "Les bactéries se sont développées ",
       "Un retour en stock aurait dû être fait dès le début de la panne",
-      "Il faut détruire toutes les matières qui ont dégelées lors de la panne"
+      "Il faut détruire toutes les matières qui ont dégelés lors de la panne"
     ],
     multiple: true
   },
@@ -29,7 +29,7 @@ const questions = [
     ],
   },
   {
-    question: "• Le mécanicien est venu de dehors sans se laver les mains ",
+    question: "Le mécanicien est venu de dehors sans se laver les mains ",
     options: [
       "Il a eu raison car la panne était urgente",
       "Il a eu raison car il ne touche pas la matière",
@@ -39,7 +39,7 @@ const questions = [
     correct: ["Il a eu tort, même s’il ne touche pas la matière"]
   },
   {
-    question: "• Le mécanicien a posé le carter de la pompe au sol ",
+    question: "Le mécanicien a posé le carter de la pompe au sol ",
     options: [
       "Il a eu raison car il va rincer la plaque à l’eau",
       "Il a eu raison pour ne pas perdre de temps",
