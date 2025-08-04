@@ -44,7 +44,7 @@ const questions = [
       "Il a eu raison car il va rincer la plaque à l’eau",
       "Il a eu raison pour ne pas perdre de temps",
       "Il aurait dû la poser dans un bac propre",
-      "o Il l’a posé au sol, car il pensait que la ligne sera dans tous les cas nettoyés, il la remonte"
+      "Il l’a posé au sol, car il pensait que la ligne sera dans tous les cas nettoyés, il la remonte"
     ],
     correct: ["Il aurait dû la poser dans un bac propre"]
   }
